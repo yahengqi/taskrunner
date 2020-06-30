@@ -2,7 +2,6 @@ package taskrunner_test
 
 import (
 	"context"
-	"fmt"
 	"testing"
 	"time"
 
@@ -114,7 +113,7 @@ func TestExecutorInvalidations(t *testing.T) {
 	config := &config.Config{}
 	mockA := &mockFn{}
 	mockB := &mockFn{}
-	fmt.Print(("123"))
+
 	taskA := &taskrunner.Task{
 		Name: "A",
 		Run: func(ctx context.Context, shellRun shell.ShellRun) error {
